@@ -1,0 +1,22 @@
+.default {
+    color: #ccc;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    background: linear-gradient(#616a77, #25292e);
+}
+
+.default:active {
+    color: #5680cc;
+    box-shadow: 0 0 15px -1px #5680cc, inset 0 0 10px 1px #000;
+}
+
+.default:disabled {
+    cursor: auto;
+    opacity: 0.7;
+    color: #999;
+    background: linear-gradient(#868e9a, #5b616b);
+}

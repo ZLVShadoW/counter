@@ -1,0 +1,21 @@
+.groupIEl {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+.rightEl {
+    width: 55%;
+}
+.default {
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+}
+
+.error {
+    background: rgba(255, 0, 0, 0.3);
+    border-color: red;
+    color: red;
+}

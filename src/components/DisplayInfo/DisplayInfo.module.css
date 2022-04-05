@@ -1,0 +1,15 @@
+.displayInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    font-weight: bold;
+    color: #cccccc;
+    border: 2px solid #5680cc;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.displayInfo.maxValue {
+    color: red;
+}
