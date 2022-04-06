@@ -5,13 +5,15 @@ import cn from './Input.module.css'
 type InputType = React.DetailedHTMLProps<React.InputHTMLAttributes<HTMLInputElement>, HTMLInputElement> & {
     text: string
     error: boolean
-    onChangeCb: (value: string) => void
+    onChangeCb?: (value: string) => void
 }
 
 export const Input: React.FC<InputType> = ({text, error, onChangeCb, ...rest}) => {
 
     const oChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
-        onChangeCb(e.currentTarget.value)
+        onChangeCb && onChangeCb(e.currentTarget.value)
+
+
     }
 
     const cln = !error ? `${cn.default}` : `${cn.default} ${cn.error}`
