@@ -9,6 +9,10 @@
     background: linear-gradient(#616a77, #25292e);
 }
 
+.default:hover {
+    box-shadow: 0 0 5px -1px #fff;
+}
+
 .default:active {
     color: #5680cc;
     box-shadow: 0 0 15px -1px #5680cc, inset 0 0 10px 1px #000;

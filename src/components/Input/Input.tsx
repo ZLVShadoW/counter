@@ -12,8 +12,6 @@ export const Input: React.FC<InputType> = ({text, error, onChangeCb, ...rest}) =
 
     const oChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
         onChangeCb && onChangeCb(e.currentTarget.value)
-
-
     }
 
     const cln = !error ? `${cn.default}` : `${cn.default} ${cn.error}`

@@ -10,19 +10,26 @@ type DisplayInfoType = {
     error: boolean
 }
 
-export const DisplayInfo: React.FC<DisplayInfoType> = (
-    {isEditSet, count, maxValue, startValue, error}
-) => {
+export const DisplayInfo: React.FC<DisplayInfoType> =
+    ({isEditSet, count, maxValue, startValue, error}) => {
     // const cln = count === maxValue || startValue === maxValue || maxValue < startValue || maxValue < 0 || startValue < 0
     //     ? `${cn.displayInfo} ${cn.maxValue}`
     //     : `${cn.displayInfo}`
 
-    //-------------------- 2
+    // if (maxValue === startValue || maxValue < startValue || maxValue < 0 || startValue < 0) {
+    //     return (
+    //         <div className={cln}>
+    //             incorrect value
+    //         </div>
+    //     )
+    // }
+
+    //-------------------- 2 variant
     const cln = error
         ? `${cn.displayInfo} ${cn.maxValue}`
         : `${cn.displayInfo}`
 
-    if (maxValue === startValue || maxValue < startValue || maxValue < 0 || startValue < 0) {
+    if (error) {
         return (
             <div className={cln}>
                 incorrect value

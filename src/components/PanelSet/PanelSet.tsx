@@ -24,6 +24,7 @@ export const PanelSet: React.FC<PanelSetType> = (
 
     const isTrue = maxValue === startValue || maxValue < startValue || maxValue < 0 || startValue < 0  || !isEditSet
 
+
     return (
         <div className={cn.wrapper}>
             <DisplaySet onChangeMaxHandler={onChangeMaxHandler}

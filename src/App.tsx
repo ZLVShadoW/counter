@@ -10,12 +10,11 @@ type ValuesType = {
 }
 
 export const App = () => {
+
     const [count, setCount] = React.useState(0)
     const [maxValue, setMaxValue] = React.useState(0)
     const [startValue, setStartValue] = React.useState(0)
     const [isEditSet, setIsEditSet] = React.useState(true)
-
-
 
     React.useEffect(() => {
         const val = localStorage.getItem('values')
@@ -56,8 +55,8 @@ export const App = () => {
         setCount(0)
     }
 
-    // ------------- 2
-    // -------------- 2
+
+    // -------------- 2 variant
     const [error, setError] = React.useState(false)
     React.useEffect(() => {
         if (count === maxValue || startValue === maxValue || maxValue < startValue || maxValue < 0 || startValue < 0) {
